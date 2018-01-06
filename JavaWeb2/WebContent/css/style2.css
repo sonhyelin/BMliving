@@ -1,0 +1,456 @@
+@charset "UTF-8";
+
+      a
+      {
+         color: #979797;
+         text-decoration: none;
+      }
+      
+      a:hover
+      {
+         text-decoration: underline;
+      }
+      
+      
+/*-----------------------------------------------*/
+   .hidden
+   {
+      /* visibility: hidden; */
+      display: none;
+   }   
+   
+   /* main의 막내 동생 */
+         .clearfix::after 
+         {
+             content: "";
+             clear: left;
+             display: block;
+            /*  clear: both;
+             display: table; */
+         }
+         
+   body
+   {
+      font-family: 돋음, Arial, sans-serit;
+      font-size: 11px;
+      color: #979797;
+   }         
+   
+        
+/*-------------text Style----------------------------------*/ 
+
+.text-left{
+	text-align : left;
+}
+
+.text-center{
+	text-align : center;
+}
+
+.text-right{
+	text-align: right;
+}
+
+.text-indent{
+	text-indent: 10px;
+}
+
+.text-stron{
+	
+}
+
+         
+/*----------------btn 스타일-------------------------------*/
+   
+		.btn
+		{
+		   display: inline-block;
+		    border: 0px;
+		    cursor:  pointer; 
+		    overflow: hidden;
+		  
+		   background-image:  none;
+		   border:  1px solid transparent;
+		   border-radius:  4px;
+		   
+		   padding:3px 8px;
+		   color:#fff;
+		   font-weight:bold;
+		}   
+		
+		.btn-img{
+		   display: inline-block;
+		    border: 0px;
+		    cursor:  pointer; 
+		    overflow: hidden;
+		  
+		   background-image:  none;
+		   border:  1px solid transparent;
+		   /* border-radius:  4px; */
+		   
+		   text-indent: -999px;
+		}
+		
+		.btn-search
+		{
+		   background:  url("../images/btn-zoom.png") no-repeat center;
+		   width: 31px;
+		   height: 25px;
+		   border-left: 1px solid #8CBA34;
+		}
+		
+		.btn-default
+		{
+		   /* background-color: #759d2a; */
+		   background:-webkit-radial-gradient(center, ellipse cover, #9dcf40 0%,#698c26 100%);
+		   border-color:#608618;
+		}
+		
+		.btn-default:hover
+		{
+		   text-decoration : none;
+		   background:-webkit-radial-gradient(center, ellipse cover, #698c26 0%, #9dcf40 100%);
+		   /* background-color: #759d2a;
+		   border-color:#608618; */
+		}
+		
+		.btn-cancel
+		{
+		   width: 64px;
+		   height: 23px;
+		   background:  url("../images/btn-cancel.png") no-repeat center;
+		}
+/*-----------------list - 목록스타일--------------*/
+           .hr-list
+            {
+            	display: inline-block;
+            }
+         
+            .hr-list ul
+            {
+               overflow: auto;
+               display:flex;
+            }
+         
+            .hr-list li
+            {
+             	float: left;
+               padding-left: 9px; 
+               background: url("../images/bg-member-menu-sp.png") no-repeat 13px center;
+            }
+            
+            .hr-list li:first-child
+            {
+               padding-left: 0px; 
+               background: none;
+            }
+            
+            
+            
+          /*   #hr-list a
+            {
+               font-family: 맑은 고딕, 고딕, sans-serif;
+               font-size: 10px;
+               font-weight: bold;
+               color: #979797;
+            }   */
+
+   
+/*    #seach-form input[type="submit"]
+{
+   background:  url("../images/btn-zoom.png");
+   width: 31px;
+   height: 25px;
+   border: 0px;
+   text-indent: -999px; 
+   border-left: 1px solid #8CBA34;
+   cursor:  pointer; 
+   overflow: hidden;
+}         
+
+#main a
+{
+   
+}          */      
+
+/*-------격자형(table) 스타일 ------------------------------------------*/   
+
+.table{
+	display: table;
+	width:100%;
+	border-top:2px solid #8cba35;
+	table-layout: fixed;
+}
+
+.table tr,
+.table .tr{
+	display: table-row;
+	height: 30px;
+	line-height: 30px;	
+}
+
+.table tr td,
+.table tr th,
+.tabe .tr .td
+.tabe .tr .th{
+	display:table-cell;
+	border-bottom: 1px solid #e9e9e9;
+	text-align: center;
+}
+
+.table tr th,
+.tabe .tr .th{	
+	background: #f5f5f5 url("../images/bg-title-sp.png") no-repeat left center;
+}
+
+.table tr td.text-left,
+.table tr th.text-left,
+.tabe .tr .td.text-left,
+.tabe .tr .th.text-left
+{
+	text-align : left;
+}
+
+
+/*-----------------------main style---------------------*/
+
+main .title{
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow: ellipsis;
+}
+
+main .main{
+	font-family: 맑은 고딕, 고딕, sans-serif;
+   font-size: 21px;
+   font-weight: bold;
+   color: #646464;
+   padding-left: 25px;
+   background: url("../images/icon-main-title.png") no-repeat left center;
+}
+
+main .sub{
+}
+
+main table .w60{
+	width: 60px;
+}
+
+main table .w100{
+	min-width: 100px;
+}
+
+
+
+/*-----------------------------------------------*/   
+      #header
+      {
+         /* background: red; */
+         height: 71px;
+      }
+      
+         #header > .content-container
+         {
+            position: relative;
+         }
+            
+         #header > .content-container> section > *,
+         #logo
+         {
+            position: absolute;
+         }
+         
+            #logo
+            {
+               display: inline-block;
+               left:  0px;
+               top: 23px;
+            }
+            
+            #logo img
+            {
+               vertical-align: middle;
+            }
+            
+            #main-menu
+            {
+               left: 200px;
+               top: 27px;   
+            }
+      
+            .main-menu li
+            {
+               padding-left: 24px; 
+               background: url("../images/bg-main-menu-vsp.png") no-repeat 13px center;
+            }
+
+            .main-menu a 
+            {
+               font-family: 맑은 고딕, 고딕, sans-serif;
+               font-size: 15px;
+               font-weight: bold;
+               color: #000000;
+            }
+            
+            .main-menu li:last-child a
+            {
+               color: #ff6a00;
+            }
+         
+            #search-form
+               {
+                  width: 308px;
+                  height: 25px;
+                  border: 5px solid #8CBA34;
+                  left:  468px;
+                  top: 21px;
+                  
+               }
+               
+               #search-form form{
+               		display:flex;
+               }
+               
+               #search-form label{
+               /* 	line-height: 25px; */
+               		align-self: center;
+               		padding: 0px 5px;
+               }
+               
+               #search-form input[type="text"]{
+               		flex-grow:1;
+               		border: 0px;
+               }
+   /*-------------------------------------------------------*/               
+           .member-menu
+           {
+              right: 0px;
+              top: 20px;
+           }    
+         
+            .member-menu li
+            {
+               padding-left: 9px; 
+               background: url("../images/bg-member-menu-sp.png") no-repeat 5px center;
+            }
+            
+            .member-menu a
+            {
+               font-family: 맑은 고딕, 고딕, sans-serif;
+               font-size: 10px;
+               font-weight: bold;
+               color: #979797;
+            }             
+            
+            #customer-menu
+            {
+                 right: 0px;
+               top: 40px;
+            }
+
+			.content-container
+			{
+			   margin : auto;
+			   min-height:inherit;
+			   height: 100%;
+			   width: 960px;
+			   /* background: gray; */
+			}
+      
+		      #visual
+		      {
+		         border-top: solid 3px #8cba34;
+		         background: #313131 url("../images/bg-visual.png") no-repeat center;
+		         height: 171px;
+		      }
+		      
+		      #visual .content-container
+		      {
+		         background: #313131 url("../images/customer/visual.png") no-repeat center;
+		         
+		      }
+
+/*-----------body style------------*/      
+      #body
+      {
+         margin-top: 1px;
+         border-top: solid 5px #8cba34;
+         /* background: blue;  */
+         min-height: 300px;
+         /* max-height: 300px; */
+      }
+      
+      #body .content-container
+      {
+         background: url("../images/bg-body.png") repeat-y left top;
+      }
+      
+         #aside
+         {
+            float: left; /* 적재방법 */
+            min-height: inherit;
+            width: 205px;
+            /* overflow: auto; 스크롤바 */
+            background: url("../images/bg-aside-title.png") no-repeat left top;
+            /* background: red; */
+         }
+      
+         #main
+         {
+            float: left;
+            min-height: inherit;
+            padding-left: 35px;
+            padding-top: 45px;
+            width: 755px;
+            box-sizing: border-box;
+            /* background: yellow; */
+         }
+         
+         /* main의 막내 동생 */
+         #body::after 
+         {
+             content: "";
+             clear: left;
+             display: block;
+             clear: both;
+             display: table;
+         }
+         
+         #main + div
+         {
+            clear: left;
+         }
+/*-----------footer style------------*/
+      #footer
+      {
+         background: #313131;
+         height: 100px;
+      }
+      
+/*       #floating
+      {
+         position: relative;
+         width: 100%;
+         height: 300px;
+         background: pink;
+         left: 0px;
+         top: 10px;
+         bottom: 0px;
+      }
+      
+      #floating > div
+      {
+         position: absolute;
+         left: 0px;
+         top: 0px;
+         width: 100px;
+         heigh: 100px;
+         background: blue;
+      }
+       */
+      
+      
+      
+      
+      
+      
