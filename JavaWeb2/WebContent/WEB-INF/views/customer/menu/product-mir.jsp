@@ -31,7 +31,7 @@ header {
 		<h1>BM LIVING KOREA</h1>
 		<a href="../home/main"></a>
 		<nav>
-			<a href="../menu/intro-ceo">회사 소개</a> 
+			<a href="../menu/intro-ceo">회사 소개</a>  
 			<a href="../menu/product-mir">제품 소개</a> 
 			<a href="../menu/tech-tech">기술 및 특허</a>
 			<a href="../board/board-qna">문의 게시판</a>
