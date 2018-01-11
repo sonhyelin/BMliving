@@ -17,20 +17,14 @@
 </head>
 
 <body>
-	<%-- <section>
-		<video autoplay loop poster="${path}WebContent/images/main-bg-9.jpg">
-	      <source src="${path}/images/mirror.mp4" type="video/mp4">
-	   </video>
-		<!-- <span><a href="../menu/intro-ceo" class="click"> BM LIVING KOREA</a></span> -->
-	</section> --%>
 
-<div class="container"> 
-  
-  <div>    <!-- <div class="row">    --> 
-    <div class="col-md-3 col-sm-3 col-xs-6"> <a href="../menu/intro-ceo" class="btn btn-sm animated-button victoria-three bb">BM LIVING KOREA</a> </div>
-  </div>
-  
-  </div>
+	<div class="svg">
+		<a class="button" href="../menu/intro-ceo"> <svg>
+						<rect height="40" width="400" fill="transparent" />
+				</svg> <span>BM LIVING KOREA</span>
+		</a> 
+	</div>
+
 
 </body>
 
