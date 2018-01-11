@@ -18,7 +18,7 @@
 
 <body>
 
-	<div class="svg">
+	<div class="svg"> 
 		<a class="button" href="../menu/intro-ceo"> <svg>
 						<rect height="40" width="400" fill="transparent" />
 				</svg> <span>BM LIVING KOREA</span>
